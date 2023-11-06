@@ -29,14 +29,6 @@ aside.other-skills h1 {
     font-size:16px;
 }
 
-nav > .navigation li{
-    display: inline;
-}
-
-nav > .navigation {
-    position: absolute;
-    top: 0px;
-}
 
 nav {
     background-color: lightblue;
