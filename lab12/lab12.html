@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .container {
+        display: flex;
+    }
+    #first {order:1}
+    #second {order:2}
+    #third {order:3}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12</title>
+</head>
+<script>
+    function WinnerMessage (){
+        document.getElementById("messages").innerHTML ='You Won!';
+    }
+    function TryAgain () {
+        document.getElementById("messages").innerHTML ='Wrong Choice! Try Again';
+    }
+    function ShuffleShells () {
+        document.getElementById("firstmessage").style.order = Math.floor((Math.random()*3) +2);
+    }
+</script>
+<body onload="ShuffleShells();">
+<h1>Pick One Walnut!</h1>
+</body>
+<div class="container">
+    <img src="../images/walnut.png" id="first" class="first" onclick="WinnerMessage();">
+    <img src="../images/walnut.png" id="second" class="second" onclick="TryAgain();">
+    <img src="../images/walnut.png" id="third" class="third" onclick="TryAgain();">
+</div>
+<div id="messages"></div>
+</div>
+</body>
+</html>
