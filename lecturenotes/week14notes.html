@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+
+        p{font-family: 'Jost', sans-serif;}
+        h1{font-family: 'Bebas Neue', sans-serif;}
+        #modal-close {
+            text-align: right;
+            margin: 0px;
+        }
+        #modal {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            width: 200px;
+            padding: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px -100px;
+            display: none;
+        }
+        #container {
+            position: relative;
+            margin: 0 auto;
+            width: 800px;
+        }
+        a {
+            background-color: #f2b9c5;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById("modal").style.display = "block";
+        }
+        
+        function closeModal () {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+    <img src="https://laferger.github.io/ist263/images/cupcakes.jpg" alt="banner of a cupcake"> 
+    <h1>Desserts</h1>
+
+    <p>Apple pie ice cream dragée icing pudding jelly. Wafer danish gingerbread jelly jelly beans. Ice cream fruitcake chupa chups cheesecake tootsie roll halvah apple pie. Marshmallow carrot cake ice cream danish dragée chocolate. Cotton candy sweet gingerbread chocolate cake danish oat cake gingerbread. Marshmallow liquorice fruitcake tiramisu cookie. Caramels sweet sesame snaps gummies caramels brownie cookie candy. Shortbread macaroon sweet roll shortbread tart gummi bears bear claw dessert sweet roll. Chocolate cake pie bonbon chocolate cotton candy jelly-o icing chocolate toffee. Oat cake gummi bears lemon drops jelly beans ice cream cotton candy donut tart jujubes. Shortbread bonbon jelly beans chocolate cake wafer. Jujubes biscuit cake bear claw cookie cheesecake pudding candy canes chocolate.</p>
+    
+
+    <p>Cake brownie jelly beans oat cake caramels pudding chocolate. Gummies sweet lollipop croissant chocolate bar powder lemon drops. Chocolate cake donut jujubes cake lemon drops. Cheesecake toffee dragée pie toffee cotton candy. Cupcake brownie tiramisu sesame snaps sesame snaps lemon drops. Soufflé jelly icing sweet sesame snaps bear claw gummies donut oat cake. Donut gummies candy canes sweet lollipop. Apple pie cake jelly beans tiramisu fruitcake cake sweet. Gummies cheesecake wafer carrot cake bear claw cookie. Macaroon powder pastry caramels marzipan tiramisu. Lemon drops lollipop caramels sweet roll jelly-o bear claw. Tootsie roll croissant macaroon jelly icing candy sweet roll carrot cake ice cream. Biscuit icing caramels sweet carrot cake candy canes. Macaroon pastry liquorice caramels pie topping candy.</p>
+    <p>Apple pie ice cream dragée icing pudding jelly. Wafer danish gingerbread jelly jelly beans. Ice cream fruitcake chupa chups cheesecake tootsie roll halvah apple pie. Marshmallow carrot cake ice cream danish dragée chocolate. Cotton candy sweet gingerbread chocolate cake danish oat cake gingerbread. Marshmallow liquorice fruitcake tiramisu cookie. Caramels sweet sesame snaps gummies caramels brownie cookie candy. Shortbread macaroon sweet roll shortbread tart gummi bears bear claw dessert sweet roll. Chocolate cake pie bonbon chocolate cotton candy jelly-o icing chocolate toffee. Oat cake gummi bears lemon drops jelly beans ice cream cotton candy donut tart jujubes. Shortbread bonbon jelly beans chocolate cake wafer. Jujubes biscuit cake bear claw cookie cheesecake pudding candy canes chocolate.</p>
+    <p><a onclick="openModal();">Subscribe to Our Newsletter</a></p>
+</div>
+<div id="modal">
+    <p id="modal-close" onclick="closeModal();">X</p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit" class="button" value="Subscribe">
+    </form>
+</div>
+
+</body>
+</html>
